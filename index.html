@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -257,77 +258,7 @@
   }
   .card-sub { font-size: 0.76rem; color: var(--text-light); margin-top: 0.3rem; }
 
-  .top-holdings-section { background: var(--cream); }
-  .holdings-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.2rem;
-  }
-  .holding-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: all 0.25s;
-    position: relative;
-  }
-  .holding-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--card-shadow-hover);
-    border-color: var(--gold-border);
-  }
-  .holding-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 0.8rem;
-  }
-  .holding-ticker {
-    font-family: 'DM Mono', monospace;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: var(--charcoal);
-  }
-  .holding-rank {
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--gold-dim);
-    background: rgba(201,168,76,0.1);
-    border: 1px solid var(--gold-border);
-    border-radius: 4px;
-    padding: 0.2rem 0.5rem;
-  }
-  .holding-name { font-size: 0.82rem; color: var(--text-mid); margin-bottom: 1rem; line-height: 1.4; }
-  .holding-metrics { display: flex; gap: 1rem; margin-bottom: 1rem; }
-  .holding-metric {
-    flex: 1;
-    background: var(--cream);
-    border-radius: 8px;
-    padding: 0.7rem 0.8rem;
-    text-align: center;
-  }
-  .holding-metric-label {
-    font-size: 0.65rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-light);
-    margin-bottom: 0.2rem;
-  }
-  .holding-metric-value {
-    font-family: 'DM Mono', monospace;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--charcoal);
-  }
   .yield-value { color: var(--green); }
-  .holding-note {
-    font-size: 0.79rem;
-    color: var(--text-mid);
-    line-height: 1.5;
-    border-top: 1px solid var(--border);
-    padding-top: 0.8rem;
-  }
 
   .charts-section { background: var(--white); }
   .charts-grid {
@@ -511,32 +442,6 @@
   .yield-med  { color: #E67E22; }
   .yield-low  { color: var(--green); }
   .row-top { background: rgba(201,168,76,0.04); }
-
-  .analysis-section { background: var(--charcoal); color: white; }
-  .analysis-section .section-title { color: white; }
-  .analysis-section .section-tag { color: var(--gold); }
-  .analysis-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.2rem;
-  }
-  .analysis-card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 12px;
-    padding: 1.6rem;
-    transition: background 0.2s;
-  }
-  .analysis-card:hover { background: rgba(255,255,255,0.08); }
-  .analysis-card-icon { font-size: 1.5rem; margin-bottom: 0.8rem; }
-  .analysis-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--gold-light);
-    margin-bottom: 0.7rem;
-  }
-  .analysis-card p { font-size: 0.86rem; color: rgba(255,255,255,0.68); line-height: 1.7; }
 
   footer {
     background: #111113;
@@ -751,17 +656,6 @@ button[onclick^="download_"]{
   </div>
 </div>
 
-<section class="top-holdings-section" id="holdings">
-  <div class="section-inner">
-    <div class="section-header">
-      <div class="section-tag">Top Positions</div>
-      <h2 class="section-title">Featured Holdings</h2>
-      <p class="section-subtitle">The eight largest positions by portfolio allocation</p>
-    </div>
-    <div class="holdings-grid" id="holdingsGrid"></div>
-  </div>
-</section>
-
 <section class="charts-section" id="charts">
   <div class="section-inner">
     <div class="section-header">
@@ -843,18 +737,6 @@ button[onclick^="download_"]{
   </div>
 </section>
 
-<section class="analysis-section" id="analysis">
-  <div class="section-inner">
-    <a class="full-review-card" href="https://youtu.be/7J4RnjftDqQ?si=xUs4wWrgA45hfITm&amp;list=PLnz-9sqOVpmgZl1faPfKF_Xcce9u03Lhz" target="_blank" rel="noopener noreferrer">
-      <span class="full-review-thumbnail">
-        <img src="full-review-thumbnail.jpg" alt="Thumbnail for the full Armchair Insider Portfolio review video">
-        <span class="full-review-play" aria-hidden="true">▶</span>
-      </span>
-      <span class="full-review-copy">To learn more, click <span class="full-review-link">here for the full Review.</span></span>
-    </a>
-  </div>
-</section>
-
 <footer>
   <div><strong>Armchair Insider Portfolio</strong> — June 28, 2026 Snapshot</div>
   <div class="footer-divider"></div>
@@ -903,44 +785,6 @@ const portfolio = [
   { rank:35, ticker:"GOF",      name:"Guggenheim Strategic Opportunities Fund",                  yield:20.44, alloc:0.57, type:"CEF",     badge:"badge-cef",  url:"https://youtu.be/C_yhk9ezAa4" },
   { rank:36, ticker:"MSTY",     name:"Yieldmax MSTR Option Income Strategy ETF",                 yield:84.92, alloc:0.12, type:"Alt.",    badge:"badge-alt",  url:"https://youtu.be/5Z3bGqfQHBA" },
 ];
-
-const topHoldingNotes = {
-  QQQI: "Applies index call options on the Nasdaq-100 to harvest elevated tech sector volatility premiums as monthly income. Remains a core top-two portfolio position.",
-  GPIX: "Employs a covered call overlay on S&P 500 holdings to generate premium income while retaining partial upside equity exposure.",
-  CEFS: "Provides diversified exposure to closed-end funds, targeting discount-to-NAV opportunities across multiple asset classes. Managed by Saba Capital.",
-  PFFA: "Focuses on U.S. preferred stocks with an actively managed, leveraged approach seeking enhanced yield from preferreds across financials and utilities.",
-  IDVO: "Captures international dividend income with a covered call overlay, blending dividend yield and option premium from global developed market equities.",
-  NIHI: "Targets high income from MSCI EAFE international developed markets using a systematic options overlay, providing non-U.S. equity income exposure.",
-  ARCC: "One of the largest BDCs, Ares Capital deploys senior secured loans and other credit instruments to middle-market companies, distributing interest income.",
-  PBDC: "An ETF offering diversified exposure to publicly traded BDCs, providing access to private credit income across multiple lenders in a single wrapper.",
-};
-
-const holdingsGrid = document.getElementById("holdingsGrid");
-["GPIX","QQQI","CEFS","NIHI","IDVO","PFFA","ARCC","PBDC"].forEach(ticker => {
-  const d = portfolio.find(p => p.ticker === ticker);
-  if (!d) return;
-  const card = document.createElement("div");
-  card.className = "holding-card";
-  card.innerHTML = `
-    <div class="holding-header">
-      <div class="holding-ticker">${d.ticker}</div>
-      <div class="holding-rank">#${d.rank}</div>
-    </div>
-    <div class="holding-name">${d.name}</div>
-    <div class="holding-metrics">
-      <div class="holding-metric">
-        <div class="holding-metric-label">Yield</div>
-        <div class="holding-metric-value yield-value">${d.yield}%</div>
-      </div>
-      <div class="holding-metric">
-        <div class="holding-metric-label">Portfolio</div>
-        <div class="holding-metric-value">${d.alloc}%</div>
-      </div>
-    </div>
-    <div class="holding-note">${topHoldingNotes[d.ticker]}</div>
-  `;
-  holdingsGrid.appendChild(card);
-});
 
 let filteredData = [...portfolio];
 let sortCol = 0;
