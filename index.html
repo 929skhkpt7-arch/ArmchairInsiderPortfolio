@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Armchair Insider Portfolio — October 29, 2026</title>
+<title>Armchair Insider Portfolio — November 20, 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
@@ -616,7 +616,7 @@ button[onclick^="download_"]{
   <div class="hero-inner">
     <div class="hero-tag fade-up">Income Portfolio Research · Community Edition</div>
     <h1 class="fade-up fade-up-delay-1">Armchair Insider<br><span>Portfolio</span></h1>
-    <div class="hero-date fade-up fade-up-delay-1">October 29, 2026 · Snapshot</div>
+    <div class="hero-date fade-up fade-up-delay-1">November 20, 2026 · Snapshot</div>
     <p class="hero-intro fade-up fade-up-delay-2">
       A community-curated income-focused investment portfolio tracking covered call ETFs, BDCs, CEFs, preferred stocks, infrastructure income, and alternative yield instruments. Built for educational discussion and portfolio research.
     </p>
@@ -638,13 +638,13 @@ button[onclick^="download_"]{
       </div>
       <div class="hero-stat">
         <div class="hero-stat-label">Highest Yield</div>
-        <div class="hero-stat-value">60.34%</div>
+        <div class="hero-stat-value">76.81%</div>
         <div class="hero-stat-sub">MSTY — Yieldmax</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-label">Largest Position</div>
-        <div class="hero-stat-value">5.14%</div>
-        <div class="hero-stat-sub">CEFS — Saba Closed-End Funds ETF</div>
+        <div class="hero-stat-value">5.13%</div>
+        <div class="hero-stat-sub">NIHI — NEOS MSCI EAFE High Income ETF</div>
       </div>
     </div>
     <div class="disclaimer-bar fade-up fade-up-delay-3">
@@ -658,7 +658,7 @@ button[onclick^="download_"]{
     <div class="section-header">
       <div class="section-tag">Data Visualization</div>
       <h2 class="section-title">Portfolio Visualization</h2>
-      <p class="section-subtitle">Interactive charts based on October 29, 2026 data</p>
+      <p class="section-subtitle">Interactive charts based on November 20, 2026 data</p>
     </div>
     <div class="charts-grid">
       <div class="chart-card">
@@ -735,7 +735,7 @@ button[onclick^="download_"]{
 </section>
 
 <footer>
-  <div><strong>Armchair Insider Portfolio</strong> — October 29, 2026 Snapshot</div>
+  <div><strong>Armchair Insider Portfolio</strong> — November 20, 2026 Snapshot</div>
   <div class="footer-divider"></div>
   <div>Data Source: Armchair Insider Portfolio · Snowball</div>
   <div>Tickers shown are compatible with Seeking Alpha. Tickers for other websites and brokerages may vary.</div>
@@ -745,43 +745,43 @@ button[onclick^="download_"]{
 
 <script>
 const portfolio = [
-  { rank:1, ticker:"CEFS", name:"Saba Closed-End Funds ETF", yield:6.75, alloc:5.14, type:"CEF", badge:"badge-cef", url:"https://youtu.be/C0kTYxDZcDQ" },
-  { rank:2, ticker:"GPIX", name:"Goldman Sachs S&P 500 Premium Income ETF", yield:8.16, alloc:5.10, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/sSAwBleSxh4" },
-  { rank:3, ticker:"NIHI", name:"NEOS MSCI EAFE High Income ETF", yield:10.21, alloc:5.02, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/QIwyHALz2QE" },
-  { rank:4, ticker:"GPIQ", name:"Goldman Sachs Nasdaq-100 Core Premium Income ETF", yield:10.15, alloc:4.98, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/tPVc0_PDph4" },
-  { rank:5, ticker:"ARCC", name:"Ares Capital Corporation", yield:10.36, alloc:4.78, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/XfiKGMQkWdg" },
-  { rank:6, ticker:"PFFA", name:"Virtus InfraCap U.S. Preferred Stock ETF", yield:10.97, alloc:4.53, type:"Pref.", badge:"badge-pref", url:"https://youtu.be/1n75f2yjSGA" },
-  { rank:7, ticker:"PBDC", name:"Putnam ETF Trust - Putnam BDC Income ETF", yield:11.57, alloc:4.44, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/Y8w0vSKWyx0" },
-  { rank:8, ticker:"QDVO", name:"Amplify CWP Growth & Income ETF", yield:11.25, alloc:4.28, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/jO75M2TZW7A" },
-  { rank:9, ticker:"FSCO", name:"FS Credit Opportunities Corp.", yield:14.14, alloc:4.18, type:"Credit", badge:"badge-bond", url:"https://youtu.be/z1yhvgprpR8" },
-  { rank:10, ticker:"KGLD", name:"Kurv Gold Enhanced Income ETF", yield:16.93, alloc:3.76, type:"Alt.", badge:"badge-alt", url:"https://youtu.be/ATbtjPHsyWo" },
-  { rank:11, ticker:"NML", name:"Neuberger Berman Energy Infrastructure & Income Fund", yield:7.47, alloc:3.57, type:"Infra.", badge:"badge-infra", url:"https://youtu.be/y0t8c36jC-E" },
-  { rank:12, ticker:"UTF", name:"Cohen & Steers Infrastructure Fund", yield:7.48, alloc:3.01, type:"Infra.", badge:"badge-infra", url:"https://youtu.be/6_xjaPKgm-4" },
-  { rank:13, ticker:"IDVO", name:"Amplify International Enhanced Dividend Income ETF", yield:6.11, alloc:2.97, type:"Intl ETF", badge:"badge-etf", url:"https://youtu.be/jynNVpCbGmc" },
-  { rank:14, ticker:"IDV", name:"iShares International Select Dividend ETF", yield:5.70, alloc:2.94, type:"Intl ETF", badge:"badge-etf", url:"https://youtu.be/04ltALt3ZoY" },
-  { rank:15, ticker:"OVL", name:"Overlay Shares Large Cap Equity ETF", yield:9.21, alloc:2.92, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/A365rDVkJAA?" },
-  { rank:16, ticker:"RLTY", name:"Cohen & Steers Real Estate Opportunities Income Fund", yield:9.49, alloc:2.87, type:"CEF", badge:"badge-cef", url:"https://youtu.be/x_R-cQc34WQ" },
-  { rank:17, ticker:"IYRI", name:"NEOS Real Estate High Income ETF", yield:10.79, alloc:2.80, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/rvIwjesQG1M" },
-  { rank:18, ticker:"ADX", name:"Adams Diversified Equity Fund", yield:7.72, alloc:2.67, type:"CEF", badge:"badge-cef", url:"https://youtu.be/oYhOPPz1FvA" },
-  { rank:19, ticker:"PTY", name:"PIMCO Corporate and Income Opportunity Fund", yield:13.39, alloc:2.58, type:"CEF", badge:"badge-cef", url:"https://youtu.be/31pMGvp7Myw" },
-  { rank:20, ticker:"BXSL", name:"Blackstone Secured Lending Fund", yield:13.28, alloc:2.51, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/kNyp7J4LF18" },
-  { rank:21, ticker:"MLPI", name:"NEOS MLP & Energy Infrastructure High Income ETF", yield:13.64, alloc:2.43, type:"Infra.", badge:"badge-infra", url:"https://youtu.be/4iXuvkd5iCc" },
-  { rank:22, ticker:"BTCI", name:"NEOS Bitcoin High Income ETF", yield:25.80, alloc:2.32, type:"Alt.", badge:"badge-alt", url:"https://youtu.be/oKIb2hoFZws" },
-  { rank:23, ticker:"KQQQ", name:"Kurv Technology Titans Select ETF", yield:14.96, alloc:2.11, type:"Alt.", badge:"badge-alt", url:"https://youtu.be/PREnMsnb0Pw" },
-  { rank:24, ticker:"MAIN", name:"Main Street Capital Corporation", yield:5.82, alloc:1.98, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/wzzJU2xLYXQ" },
-  { rank:25, ticker:"HTGC", name:"Hercules Capital, Inc", yield:11.32, alloc:1.79, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/TVail9TSk34" },
-  { rank:26, ticker:"PCN", name:"PIMCO Corporate & Income Strategy Fund", yield:12.59, alloc:1.75, type:"CEF", badge:"badge-cef", url:"https://youtu.be/31pMGvp7Myw" },
-  { rank:27, ticker:"THQ", name:"Tekla Healthcare Opportunities Fund", yield:11.57, alloc:1.70, type:"CEF", badge:"badge-cef", url:"https://youtu.be/R_3vZtBGpF0" },
-  { rank:28, ticker:"DSL", name:"DoubleLine Income Solutions Fund", yield:13.50, alloc:1.61, type:"CEF", badge:"badge-cef", url:"https://youtu.be/R_3vZtBGpF0" },
-  { rank:29, ticker:"CSWC", name:"Capital Southwest Corporation", yield:10.35, alloc:1.56, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/S2hpDb3Otp4" },
-  { rank:30, ticker:"ASGI", name:"Aberdeen Standard Global Infrastructure Income Fund", yield:13.70, alloc:1.45, type:"Infra.", badge:"badge-infra", url:"https://youtu.be/p3pk68sIpxo" },
-  { rank:31, ticker:"DX.PR.C", name:"Dynex Capital Inc Pref Share", yield:9.45, alloc:1.43, type:"Pref.", badge:"badge-pref", url:"https://youtu.be/KJcUyVzBgZo" },
-  { rank:32, ticker:"FDUS", name:"Fidus Investment Corporation", yield:10.48, alloc:1.15, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/R_3vZtBGpF0" },
-  { rank:33, ticker:"KSLV", name:"Kurv Silver Enhanced Income ETF", yield:29.11, alloc:1.12, type:"Alt.", badge:"badge-alt", url:"https://youtu.be/6_gG0oOts1g" },
-  { rank:34, ticker:"EMO", name:"ClearBridge Energy Midstream Opportunity Fund", yield:8.56, alloc:1.08, type:"CEF", badge:"badge-cef", url:"https://youtu.be/TVXGsox3oeM" },
-  { rank:35, ticker:"PDI", name:"PIMCO Dynamic Income Fund", yield:18.77, alloc:0.85, type:"CEF", badge:"badge-cef", url:"https://youtu.be/h0lbY0aS67A" },
-  { rank:36, ticker:"GOF", name:"Guggenheim Strategic Opportunities Fund", yield:24.92, alloc:0.47, type:"CEF", badge:"badge-cef", url:"https://youtu.be/C_yhk9ezAa4" },
-  { rank:37, ticker:"MSTY", name:"Yieldmax MSTR Option Income Strategy ETF", yield:60.34, alloc:0.15, type:"Alt.", badge:"badge-alt", url:"https://youtu.be/5Z3bGqfQHBA" },
+  { rank:1, ticker:"NIHI", name:"NEOS MSCI EAFE High Income ETF", yield:10.40, alloc:5.13, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/QIwyHALz2QE" },
+  { rank:2, ticker:"CEFS", name:"Saba Closed-End Funds ETF", yield:12.00, alloc:5.11, type:"CEF", badge:"badge-cef", url:"https://youtu.be/C0kTYxDZcDQ" },
+  { rank:3, ticker:"ARCC", name:"Ares Capital Corporation", yield:10.20, alloc:5.06, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/XfiKGMQkWdg" },
+  { rank:4, ticker:"GPIX", name:"Goldman Sachs S&P 500 Premium Income ETF", yield:8.64, alloc:5.02, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/sSAwBleSxh4" },
+  { rank:5, ticker:"GPIQ", name:"Goldman Sachs Nasdaq-100 Core Premium Income ETF", yield:11.20, alloc:4.69, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/tPVc0_PDph4" },
+  { rank:6, ticker:"PBDC", name:"Putnam ETF Trust - Putnam BDC Income ETF", yield:11.59, alloc:4.62, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/Y8w0vSKWyx0" },
+  { rank:7, ticker:"PFFA", name:"Virtus InfraCap U.S. Preferred Stock ETF", yield:11.80, alloc:4.38, type:"Pref.", badge:"badge-pref", url:"https://youtu.be/1n75f2yjSGA" },
+  { rank:8, ticker:"FSCO", name:"FS Credit Opportunities Corp.", yield:14.17, alloc:4.34, type:"Credit", badge:"badge-bond", url:"https://youtu.be/z1yhvgprpR8" },
+  { rank:9, ticker:"OVL", name:"Overlay Shares Large Cap Equity ETF", yield:11.21, alloc:4.12, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/A365rDVkJAA?" },
+  { rank:10, ticker:"QDVO", name:"Amplify CWP Growth & Income ETF", yield:11.86, alloc:4.11, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/jO75M2TZW7A" },
+  { rank:11, ticker:"KGLD", name:"Kurv Gold Enhanced Income ETF", yield:15.65, alloc:3.63, type:"Alt.", badge:"badge-alt", url:"https://youtu.be/ATbtjPHsyWo" },
+  { rank:12, ticker:"NML", name:"Neuberger Berman Energy Infrastructure & Income Fund", yield:8.15, alloc:3.46, type:"Infra.", badge:"badge-infra", url:"https://youtu.be/y0t8c36jC-E" },
+  { rank:13, ticker:"RLTY", name:"Cohen & Steers Real Estate Opportunities & Income Fund", yield:9.19, alloc:3.08, type:"CEF", badge:"badge-cef", url:"https://youtu.be/x_R-cQc34WQ" },
+  { rank:14, ticker:"IDV", name:"iShares International Select Dividend ETF", yield:5.76, alloc:3.03, type:"Intl ETF", badge:"badge-etf", url:"https://youtu.be/04ltALt3ZoY" },
+  { rank:15, ticker:"UTF", name:"Cohen & Steers Infrastructure Fund", yield:7.77, alloc:3.02, type:"Infra.", badge:"badge-infra", url:"https://youtu.be/6_xjaPKgm-4" },
+  { rank:16, ticker:"IYRI", name:"NEOS Real Estate High Income ETF", yield:10.56, alloc:2.98, type:"CC ETF", badge:"badge-cc", url:"https://youtu.be/rvIwjesQG1M" },
+  { rank:17, ticker:"IDVO", name:"Amplify International Enhanced Dividend Income ETF", yield:6.56, alloc:2.89, type:"Intl ETF", badge:"badge-etf", url:"https://youtu.be/jynNVpCbGmc" },
+  { rank:18, ticker:"PTY", name:"PIMCO Corporate and Income Opportunity Fund", yield:13.60, alloc:2.64, type:"CEF", badge:"badge-cef", url:"https://youtu.be/31pMGvp7Myw" },
+  { rank:19, ticker:"ADX", name:"Adams Diversified Equity Fund", yield:9.19, alloc:2.62, type:"CEF", badge:"badge-cef", url:"https://youtu.be/oYhOPPz1FvA" },
+  { rank:20, ticker:"MLPI", name:"NEOS MLP & Energy Infrastructure High Income ETF", yield:14.01, alloc:2.46, type:"Infra.", badge:"badge-infra", url:"https://youtu.be/4iXuvkd5iCc" },
+  { rank:21, ticker:"MAIN", name:"Main Street Capital Corporation", yield:5.91, alloc:2.08, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/wzzJU2xLYXQ" },
+  { rank:22, ticker:"KQQQ", name:"Kurv Technology Titans Select ETF", yield:16.66, alloc:1.97, type:"Alt.", badge:"badge-alt", url:"https://youtu.be/PREnMsnb0Pw" },
+  { rank:23, ticker:"BTCI", name:"NEOS Bitcoin High Income ETF", yield:32.52, alloc:1.91, type:"Alt.", badge:"badge-alt", url:"https://youtu.be/oKIb2hoFZws" },
+  { rank:24, ticker:"THQ", name:"Tekla Healthcare Opportunities Fund", yield:11.43, alloc:1.77, type:"CEF", badge:"badge-cef", url:"https://youtu.be/R_3vZtBGpF0" },
+  { rank:25, ticker:"HTGC", name:"Hercules Capital, Inc", yield:12.03, alloc:1.76, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/TVail9TSk34" },
+  { rank:26, ticker:"PCN", name:"PIMCO Corporate & Income Strategy Fund", yield:13.04, alloc:1.76, type:"CEF", badge:"badge-cef", url:"https://youtu.be/31pMGvp7Myw" },
+  { rank:27, ticker:"DSL", name:"DoubleLine Income Solutions Fund", yield:13.72, alloc:1.64, type:"CEF", badge:"badge-cef", url:"https://youtu.be/R_3vZtBGpF0" },
+  { rank:28, ticker:"ASGI", name:"Aberdeen Standard Global Infrastructure Income Fund", yield:12.79, alloc:1.62, type:"Infra.", badge:"badge-infra", url:"https://youtu.be/hzo-FsClvTo" },
+  { rank:29, ticker:"CSWC", name:"Capital Southwest Corporation", yield:10.39, alloc:1.61, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/S2hpDb3Otp4" },
+  { rank:30, ticker:"DX.PR.C", name:"Dynex Capital Inc Pref Share", yield:9.45, alloc:1.49, type:"Pref.", badge:"badge-pref", url:"https://youtu.be/KJcUyVzBgZo" },
+  { rank:31, ticker:"AGNCO", name:"AGNC Investment Corp", yield:9.33, alloc:1.31, type:"Pref.", badge:"badge-pref", url:null },
+  { rank:32, ticker:"FDUS", name:"Fidus Investment Corporation", yield:11.36, alloc:1.20, type:"BDC", badge:"badge-bdc", url:"https://youtu.be/R_3vZtBGpF0" },
+  { rank:33, ticker:"EMO", name:"ClearBridge Energy Midstream Opportunity Fund", yield:9.13, alloc:1.05, type:"CEF", badge:"badge-cef", url:"https://youtu.be/TVXGsox3oeM" },
+  { rank:34, ticker:"KSLV", name:"Kurv Silver Enhanced Income ETF", yield:33.90, alloc:1.00, type:"Alt.", badge:"badge-alt", url:"https://youtu.be/6_gG0oOts1g" },
+  { rank:35, ticker:"PDI", name:"PIMCO Dynamic Income Fund", yield:18.83, alloc:0.88, type:"CEF", badge:"badge-cef", url:"https://youtu.be/h0lbY0aS67A" },
+  { rank:36, ticker:"GOF", name:"Guggenheim Strategic Opportunities Fund", yield:25.77, alloc:0.48, type:"CEF", badge:"badge-cef", url:"https://youtu.be/C_yhk9ezAa4" },
+  { rank:37, ticker:"MSTY", name:"Yieldmax MSTR Option Income Strategy ETF", yield:76.81, alloc:0.10, type:"Alt.", badge:"badge-alt", url:"https://youtu.be/5Z3bGqfQHBA" },
 ];
 
 let filteredData = [...portfolio];
@@ -824,7 +824,7 @@ function downloadExcel() {
 
   // Add a disclaimer sheet
   const disc = XLSX.utils.aoa_to_sheet([
-    ["Armchair Insider Portfolio — October 29, 2026 Snapshot"],
+    ["Armchair Insider Portfolio — November 20, 2026 Snapshot"],
     [""],
     ["Data Source: Armchair Insider Portfolio · Snowball"],
     ["Tickers shown are compatible with Seeking Alpha."],
@@ -836,7 +836,7 @@ function downloadExcel() {
   disc['!cols'] = [{ wch: 70 }];
   XLSX.utils.book_append_sheet(wb, disc, "Disclaimer");
 
-  XLSX.writeFile(wb, "Armchair-Insider-Portfolio-October-29-2026.xlsx");
+  XLSX.writeFile(wb, "Armchair-Insider-Portfolio-November-20-2026.xlsx");
 }
 
 function renderTable(data) {
